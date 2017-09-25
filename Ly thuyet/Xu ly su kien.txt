@@ -1,0 +1,69 @@
+onClickXML: dung khi cac control duoc keo tha ra man hinh 
+<Button
+        android:id="@+id/btnCong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="xuLyPhepCong"
+        android:text="(+)onClickXML" />
+---
+EditText txtA,txtB;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        addControls();
+        addEvents();
+    }
+
+    private void addEvents() {
+    }
+
+    private void addControls() {
+        txtA = (EditText) findViewById(R.id.txtA);
+        txtB = (EditText) findViewById(R.id.txtB);
+    }
+
+    public void xuLyPhepCong(View v){
+        int a = Integer.parseInt(txtA.getText().toString());
+        int b = Integer.parseInt(txtB.getText().toString());
+        int s = a + b;
+        Toast.makeText(MainActivity.this,"Sum = " + s,Toast.LENGTH_LONG).show();
+    }
+=====================================================
+anomous listener: khi control co san hoac khong co, chay khi chuong trinh thuc thi
+private void addEvents() {
+        btnTru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                xuLyPhepTru();
+            }
+        });
+    }
+
+    private void xuLyPhepTru() {
+        int a = Integer.parseInt(txtA.getText().toString());
+        int b = Integer.parseInt(txtB.getText().toString());
+        int s = a - b;
+        Toast.makeText(MainActivity.this,"Tru = " + s,Toast.LENGTH_LONG).show();
+    }
+
+    private void addControls() {
+        txtA = (EditText) findViewById(R.id.txtA);
+        txtB = (EditText) findViewById(R.id.txtB);
+        btnTru = (Button) findViewById(R.id.btnTru);
+    }
+========================================================
+varible listener: neu co chia se su kien
+suKienChiaSe = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(v.getId() == R.id.btnNhan){
+                    xuLyPhepNhan();
+                }
+                if(v.getId() == R.id.btnChia){
+                    xuLyPhepChia();
+                }
+            }
+        };
+        btnNhan.setOnClickListener(suKienChiaSe);
+        btnChia.setOnClickListener(suKienChiaSe);

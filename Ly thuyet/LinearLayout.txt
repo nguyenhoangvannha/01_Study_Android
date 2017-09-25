@@ -1,0 +1,4 @@
+<LinearLayout
+android:layout_span="2"
+android:layout_column="2"
+android:stretchColumns="*"
