@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Bai007 RelativeLayout</string>
+    <string name="testView1">Test view 1 la ta</string>
+    <string name="testView2">Test view 2 la ta</string>
+    <string name="testView3">Test view 3 la ta</string>
+</resources>
