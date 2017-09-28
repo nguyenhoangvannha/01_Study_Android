@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bai013.2 Thuchanh Button TextView EditText</string>
+    <string name="label_username">Tên đăng nhập</string>
+    <string name="label_password">Mật khẩu</string>
+    <string name="usernameHint">Tên tài khoản của bạn</string>
+    <string name="passwordHint">Mật khẩu của bạn</string>
+    <string name="login_button">Đăng nhập</string>
+</resources>

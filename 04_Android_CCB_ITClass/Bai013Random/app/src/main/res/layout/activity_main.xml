@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min value"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        />
+    <EditText
+        android:id="@+id/txtMinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:hint="Type min value"
+        android:inputType="number"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/txtMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max value"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textIsSelectable="true"
+        />
+    <EditText
+        android:id="@+id/txtMaxValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:hint="Type max value"
+        android:inputType="number"
+        android:layout_marginLeft="30dp"/>
+    <Button
+        android:id="@+id/btnRand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random"
+        android:drawableLeft="@drawable/rand"
+        android:textColor="#4fa76e"
+        android:layout_gravity="center"/>
+</LinearLayout>

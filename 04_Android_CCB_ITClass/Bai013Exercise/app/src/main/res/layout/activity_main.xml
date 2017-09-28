@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/txtInput01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number 01"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:id="@+id/txtNum01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="50dp"
+        android:hint="First number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/txtInput02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number 02"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:id="@+id/txtNum02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="50dp"
+        android:hint="Second number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/exe"
+        android:text="Execute"
+        android:onClick="btnExeOnClick"
+        />
+</LinearLayout>

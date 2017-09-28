@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bai014 Login</string>
+    <string name="iclass_title">Khóa học trực tuyến ITClass.vn</string>
+    <string name="signin_fb">Sign in with </string>
+    <string name="signin_tw">Sign in with </string>
+    <string name="user_hint">Username or email</string>
+    <string name="password_hint">Your password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">I have forgotten my password</string>
+</resources>
