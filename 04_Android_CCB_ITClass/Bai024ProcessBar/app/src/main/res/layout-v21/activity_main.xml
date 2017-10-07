@@ -1,0 +1,18 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@+id/prXuLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:backgroundTint="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btnBatDau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bat dau"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
