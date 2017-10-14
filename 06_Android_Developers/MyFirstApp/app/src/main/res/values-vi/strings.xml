@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ứng dụng đầu tiên của tôi</string>
+    <string name="edit_message">Nhập một thông điệp</string>
+    <string name="button_send">Gửi</string>
+</resources>
