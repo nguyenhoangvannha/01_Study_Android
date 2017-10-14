@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hotdog.bai22radiobutton">
+    package="com.example.naco.bai22radiobutton">
 
     <application
         android:allowBackup="true"
