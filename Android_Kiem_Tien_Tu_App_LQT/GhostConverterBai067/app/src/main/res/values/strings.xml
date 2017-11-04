@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ghost Converter (Bai 067)</string>
+    <string-array name="distance_style">
+        <item>Km</item>
+        <item>m</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+</resources>

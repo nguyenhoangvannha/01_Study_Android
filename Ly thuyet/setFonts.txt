@@ -1,0 +1,7 @@
+B1: Tao thu muc Assets
+B2: Tao thu muc fonts con cua Assets
+B3: Copy fonts vao thu muc fonts
+B4:
+	txtFonts = findViewById(R.id.txtFonts);
+        Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/Actionsh.ttf");
+        txtFonts.setTypeface(typeface);

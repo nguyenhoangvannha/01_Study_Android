@@ -1,0 +1,53 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Bạn đã học ngôn ngữ lập trình nào"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <CheckBox
+        android:id="@+id/chkCPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C++"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_below="@id/txtQuestion"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        />
+    <CheckBox
+        android:id="@+id/chkJava"
+        android:text="Java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkCPP"
+        android:layout_alignStart="@id/chkCPP"
+        android:textAppearance="?android:textAppearanceMedium"
+        style="@style/Base.Widget.AppCompat.CompoundButton.RadioButton"
+        android:layout_alignLeft="@id/chkCPP" />
+    <CheckBox
+        android:id="@+id/chkCSharp"
+        android:text="C#"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkJava"
+        android:layout_alignLeft="@id/chkJava"
+        android:textAppearance="?android:textAppearanceMedium"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"/>
+    <Button
+        android:id="@+id/btnChoose"
+        android:text="Choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkCSharp"
+        android:layout_alignLeft="@id/chkCSharp"
+        android:layout_marginTop="30dp"
+        style="@style/AppTheme.Button"
+        />
+</RelativeLayout>
