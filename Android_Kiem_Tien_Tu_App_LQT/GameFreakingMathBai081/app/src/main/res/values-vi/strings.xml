@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Đoán nhanh</string>
+    <string name="play_button">Chơi ngay</string>
+    <string name="dev_info">Thông tin về naco</string>
+</resources>
