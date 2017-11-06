@@ -37,11 +37,11 @@
             android:gravity="right"
             />
         <TextView
-            android:id="@+id/txtPlus"
+            android:id="@+id/txtOperator"
             android:text="+"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
+            android:layout_weight="0.5"
             style="@style/AppTheme.NumberTextView"
             />
         <TextView
@@ -62,7 +62,7 @@
         style="@style/AppTheme.NumberTextView"
         android:layout_below="@id/linearLayout"
         android:layout_centerHorizontal="true"
-        android:textSize="80dp"
+        android:textSize="60sp"
         />
     <TextView
         android:id="@+id/txtResult"
@@ -70,10 +70,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/AppTheme.NumberTextView"
-        android:layout_below="@id/linearLayout"
-        android:layout_toRightOf="@id/txtEquals"
+        android:layout_below="@id/txtEquals"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
-        android:textSize="80dp"
+        android:textSize="100sp"
         android:textColor="#fc3b35"/>
     <ImageButton
         android:id="@+id/imgCorrect"
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/actionbar_background"
+        android:background="@drawable/imagebutton_background"
         />
     <ImageButton
         android:id="@+id/imgInCorrect"
@@ -92,6 +92,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/actionbar_background"
+        android:background="@drawable/imagebutton_background"
         />
 </RelativeLayout>
