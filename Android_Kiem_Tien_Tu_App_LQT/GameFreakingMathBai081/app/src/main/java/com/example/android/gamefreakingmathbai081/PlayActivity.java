@@ -1,5 +1,7 @@
 package com.example.android.gamefreakingmathbai081;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,14 +9,23 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class PlayActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView txtNum01, txtNum02, txtOperator, txtResult;
     private ImageButton btnCorrect, btnInCorrect;
     private TextView txtScore, txtTimer;
+    private Timer timer;
+    private TimerTask timerTask;
+    private RelativeLayout relativeLayout;
+    private Random random;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +51,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         txtTimer = findViewById(R.id.txtTimeLeft);
         btnCorrect = findViewById(R.id.imgCorrect);
         btnInCorrect = findViewById(R.id.imgInCorrect);
+        relativeLayout = findViewById(R.id.play_layout);
+        random = new Random();
         loadNewGame(false);
     }
 
@@ -54,7 +67,6 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
         txtScore.setText(GamePlay.getScore() + "");
-
     }
 
     private void doInCorrect() {
@@ -64,6 +76,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             Toast.makeText(this, "Great!", Toast.LENGTH_SHORT).show();
             loadNewGame(true);
+
         }
     }
 
@@ -79,9 +92,18 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
     private void loadNewGame(boolean bLasetAnswer){
         GamePlay.makeNewGame(bLasetAnswer);
+        relativeLayout.setBackgroundColor(Color.parseColor(generateColor()));
         txtNum01.setText(GamePlay.getNum01() + "");
         txtNum02.setText(GamePlay.getNum02() + "");
         txtOperator.setText(GamePlay.getcOperator() +"");
         txtResult.setText(GamePlay.getNumReturn() + "");
+    }
+
+    private String generateColor(){
+        StringBuilder str = new StringBuilder("#");
+        for(int i = 0; i < 6; i++){
+            str.append(random.nextInt(10) + "");
+        }
+        return str.toString();
     }
 }
