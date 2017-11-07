@@ -21,9 +21,11 @@ public class ContactAdapter extends BaseAdapter {
 
     private Context context;
     private ArrayList<ContactModel> arrayList;
-    public ContactAdapter (Context context, ArrayList<ContactModel> contactModels){
+    private IContactInfo iContactInfo;
+    public ContactAdapter (Context context, ArrayList<ContactModel> contactModels, IContactInfo iContactInfo){
         this.context = context;
         this.arrayList = contactModels;
+        this.iContactInfo = iContactInfo;
     }
     @Override
     public int getCount() {
@@ -66,7 +68,8 @@ public class ContactAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View view) {
                     ContactModel model = arrayList.get(i);
-                    ((MainActivity)context).showInfo(model);
+                    //((MainActivity)context).showInfo(model);//cach 1
+                    iContactInfo.showUserInfo(model);
                 }
             });
             rowView.setTag(holder);
