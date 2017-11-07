@@ -66,7 +66,7 @@ public class ContactAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View view) {
                     ContactModel model = arrayList.get(i);
-                    Toast.makeText(ContactAdapter.this.context, model.getName(), Toast.LENGTH_SHORT).show();
+                    ((MainActivity)context).showInfo(model);
                 }
             });
             rowView.setTag(holder);
