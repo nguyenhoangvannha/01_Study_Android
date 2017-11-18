@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.TextViewAppName">
+        <item name="android:textSize">40sp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+    </style>
+    <style name="AppTheme.ButtonPlayNow">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <style name="AppTheme.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#34b71c</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppTheme.NumberTextView">
+        <item name="android:textSize">80sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#2daadc</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:id="@+id/txtAppName"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="@style/AppTheme.TextViewAppName"
+        />
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        android:src="@drawable/app_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btnPlayButton"
+        android:text="@string/play_button"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/AppTheme.ButtonPlayNow"
+        android:background="@drawable/playnow_button"
+        />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Game Freaking Math</string>
+    <string name="play_button">Play now</string>
+    <string name="dev_info">About naco</string>
+</resources>
