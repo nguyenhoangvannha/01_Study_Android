@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Bai 32 Project Thuc Te</string>
+    <dimen name="item_padding_left">10dp</dimen>
+    <dimen name="item_like">30dp</dimen>
 </resources>
