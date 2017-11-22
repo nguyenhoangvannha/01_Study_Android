@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Bai015.1LayerList.iml" filepath="$PROJECT_DIR$/Bai015.1LayerList.iml" />
+      <module fileurl="file://G:\workspace\Android\04_Android_CCB_ITClass\Bai015.1LayerList\Bai015.1LayerList.iml" filepath="G:\workspace\Android\04_Android_CCB_ITClass\Bai015.1LayerList\Bai015.1LayerList.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://G:\workspace\Android\04_Android_CCB_ITClass\Bai015.1LayerList\app\app.iml" filepath="G:\workspace\Android\04_Android_CCB_ITClass\Bai015.1LayerList\app\app.iml" />
     </modules>
   </component>
 </project>
