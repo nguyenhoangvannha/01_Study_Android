@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnuBold"
+        android:title="Bold"/>
+    <item
+        android:id="@+id/mnuItalic"
+        android:title="Italic"/>
+    <item
+        android:id="@+id/mnuNormal"
+        android:title="Normal"/>
+</menu>
